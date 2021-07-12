@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 header {
   display: flex;
   justify-content: space-between;
@@ -52,29 +53,32 @@ main {
   width: 3rem;
 }
 .bears {
-  background-color: white;
-  width: 25%;
-  height: 70%;
-  border-radius: 15px;
   overflow: hidden;
   border: 2px solid black;
+  background-color: #e6cee1;
+  width: 47vh;
+  height: 55vh;
+  border-radius: 15px;
+  overflow: hidden;
   margin: 20px;
-  font-family: "Indie Flower", cursive;
-  font-size: 20px;
-  &-name {
-    padding-left: 15px;
-  }
-  &-price {
-    padding-left: 15px;
-  }
-  &-desc {
-    padding-left: 15px;
+  margin-bottom: 30px;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  transition: 0.3s ease-in-out;
+
+  &-img {
+    width: 100%;
+    height: 60%;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
   }
 }
 
-.bears-img {
-  width: 100%;
-}
 // FOOTER
 .container-footer {
   display: flex;
@@ -97,4 +101,36 @@ main {
   text-decoration: none;
   color: black;
   cursor: pointer;
+}
+
+// PAGE PRODUIT DESCRIPTION
+.bears-description {
+  border: 2px solid black;
+  background-color: #e6cee1;
+  width: 120vh;
+  height: 40vh;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 20px;
+  margin-bottom: 30px;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+
+  &__img {
+    height: 40vh;
+    background-position: center center;
+    background-size: cover;
+  }
+  &__total {
+    display: flex;
+    flex-direction: column;
+    padding-left: 21px;
+  }
 }
