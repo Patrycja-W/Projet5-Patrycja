@@ -5,21 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/89f52f6747.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 
-<body>
+<body style="background-color:#f3e9f1;">
     <header>
-
+        <div class="nav">
+            <div class="nav-logo" style="background-image: url(./images/img-logo.png);" ></div>
+          </div>
+          <div class="nav-bar">
+            <a class= 'nav-accueil' href="./index.html">Accueil</a>
+            <a class= 'nav-contact' href="#">Contact</a>
+            <a class= 'nav-panier' href="#">Panier <i class="fas fa-shopping-cart"></i></a>
+          </div>
     </header>
 
-    <main id ="getPanier">
+    <main>
+        <table class="tftable" id="getPanier">
+            <thead>
+              <th>Photo</th>
+              <th>Designation</th>
+              <th>Prix</th>
+              <th>Quantité</th>
+              <th>Sous-Total</th>
+              <th><i class="fas fa-trash-alt fa-2x"></i></th>
+            </thead>
+            <tfoot>
+              <th colspan="3"></th>
+              <th>Quantité totale : <span id="total_quantity">A FAIRE</span></th>
+              <th>Total : <span class="total_price">A FAIRE</span> €</th>
+              <th><i class="far fa-times-circle fa-2x" id="delete_products" title="Tout supprimer"></i></th>
+            </tfoot>
+            <tbody id="cart_product"></tbody>
+          </table>
 
     </main>
 
     <footer>
-
+        <div class="container-footer">
+    
+            <div class="container-footer__btn">
+                <ul>
+                    <li><a> Conditions générales de vente</a></li>
+                    <li><a> Données et confidentialité</a></li>
+                    <li><a>Mentions légales</a></li>
+                </ul>
+            </div>
+      
+            <div class="container-footer__btn">
+                <ul>
+                    <li><a>Centre d'aide</a></li>
+                    <li><a href="mailto:adresse@serveur.com"> Contact </a></li>
+      
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
+<script src="./JS/panier.js"></script>
 
 </html>
+

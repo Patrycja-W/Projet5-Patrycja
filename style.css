@@ -176,4 +176,18 @@ main {
           flex-direction: column;
   padding-left: 21px;
 }
+
+.bears-description__color {
+  width: 15%;
+}
+
+.bears-description__ajoutPanier {
+  line-height: 2.5;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  background-color: purple;
+  width: 40%;
+}
 /*# sourceMappingURL=style.css.map */
