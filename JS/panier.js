@@ -18,28 +18,26 @@ const displayPanier = () => {
     getPanier.innerHTML += `
     <tr>
     <td>
-    <img
-    src="${ourson.imageUrl}"
-    alt="Photo de l'appareil ${ourson.name}"
-    style="height:200px;width:200px;object-fit:cover;"
-    />
+    <img src="${ourson.imageUrl}" alt="Photo de l'appareil ${
+      ourson.name
+    }" style="height:200px;width:200px;object-fit:cover;    border-radius: 50%;" />
     </td>
     <td>
-      <h3>Designation : </h3>
+  
       ${ourson.name}
     </td>
     <td>
-      <h3>Prix : </h3>
+     
       ${ourson.price / 100} €
     </td>
     <td>
-      <h3>Quantité : </h3>
+     
       <i class="fas fa-minus-square fa-lg" title="Diminuer la quantité"></i><span> ${
         element.quantity
       } </span><i class="fas fa-plus-square fa-lg"  title="Augmenter la quantité"></i>
     </td>
     <td>
-      <h3 >Sous-Total : </h3>
+      
       <span >${(element.quantity * ourson.price) / 100}</span> €
     </td>
     <td><i class="far fa-times-circle fa-2x" title="Supprimer l'article"></i></td>
